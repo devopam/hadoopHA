@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="HadoopHA : Bash Command Line Utility bundle for Apache Hadoop High Availability (HA) Cluster housekeeping/utility jobs">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>HadoopHA</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/devopam/hadoopHA">View on GitHub</a>
+
+          <h1 id="project_title">HadoopHA</h1>
+          <h2 id="project_tagline">Bash Command Line Utility bundle for Apache Hadoop High Availability (HA) Cluster housekeeping/utility jobs</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/devopam/hadoopHA/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/devopam/hadoopHA/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="hadoopha" class="anchor" href="#hadoopha" aria-hidden="true"><span class="octicon octicon-link"></span></a>hadoopHA</h1>
+
+<h1></h1>
+
+<p>Bash Command Line Utility bundle for Apache Hadoop High Availability (HA) Cluster housekeeping/utility jobs</p>
+
+<h2>
+<a id="utility-details" class="anchor" href="#utility-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Utility Details</h2>
+
+<h1></h1>
+
+<ul>
+<li>findActiveNameNode.sh :<br>
+Fetch the active <strong>NameNode</strong> <em>FQDN</em> (fully qualified domain name) in a cluster<br>
+This standalone script will help developers to find the active NN FQDN (not the concise serviceId). It is dynamic so any changes to the cluster configuration are automatically picked up. Takes a maximum of 2 secs. Has configuration options to customize the default port number.<br>
+It is particularly useful to trigger this script before submitting any job that needs the namenode metadata (don't they all do ?) and derive the active NN FQDN upfront to avoid preventable failure/hardcoding.<br>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">HadoopHA maintained by <a href="https://github.com/devopam">devopam</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-24745261-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
